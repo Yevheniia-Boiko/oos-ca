@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  crew-applications:
+    build: ./
+    environment:
+      - PORT=5000
+  cypress:
+    image: "cypress/included:3.8.0"
+    depends_on:
+      - crew-applications
+    environment:
+      - CYPRESS_baseUrl=http://crew-applications:5000
+    working_dir: /cypress
+    volumes:
+      - ./:/cypress

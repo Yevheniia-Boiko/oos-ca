@@ -3,7 +3,8 @@
 // Tests that check working of filters
 describe("filter tests", function() {
     before(function() {
-        cy.visit("http://localhost:3000/")
+        // Visit baseUrl from cypress.json
+        cy.visit("")
         // Move 1 crew member to Interviewing column in order to have at least 1 person in each column
         cy.get(".CrewMember-up:first").click()
     })

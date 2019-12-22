@@ -7,7 +7,8 @@
 // That's why I've used only 1-2 item in each column.
 describe("colums tests", function() {
     before(function() {
-        cy.visit("http://localhost:3000/")
+        // Visit baseUrl from cypress.json
+        cy.visit("")
     })
 
     const appColumn = ".App-column"
