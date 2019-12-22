@@ -2,6 +2,18 @@
 
 Simple application which represents dashboard with candidates.
 
+
+### Action points:
+- Cypress framework was used for end-to-end tests
+- `Filters` and `moving items between columns` functionalities were covered by tests
+- All test-suites can be found in `cypress/e2e` directory
+- npm script `test:e2e:dev` was added for local cypress development 
+- `docker-compose.yml` file was added
+
+### Build and test
+`docker-compose up`
+
+
 ### Running locally
 `yarn install`
 
